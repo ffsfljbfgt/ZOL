@@ -1,0 +1,65 @@
+main .container #banner_t {
+  float: left; }
+main .container #banner_r {
+  float: left; }
+  main .container #banner_r #banner_r1 {
+    display: block;
+    background: url(../img/banner_r1.jpg);
+    height: 150px;
+    width: 300px; }
+  main .container #banner_r #banner_r2 {
+    display: block;
+    background: url(../img/banner_r2.jpg);
+    height: 150px;
+    width: 300px; }
+main .container #list h1 {
+  font-size: 28px;
+  font-weight: bolder; }
+main .container #list .list_t {
+  width: 1200px;
+  background: #E3E1E2; }
+  main .container #list .list_t li {
+    float: left; }
+    main .container #list .list_t li a {
+      display: block;
+      font-size: 18px;
+      height: 40px;
+      line-height: 40px;
+      padding: 0 15px;
+      color: black; }
+  main .container #list .list_t li:hover a {
+    color: red;
+    background: white; }
+main .container #list .list_b li img {
+  height: 283px;
+  width: 283px;
+  margin-bottom: 16px; }
+main .container #list .list_b li p {
+  font-size: 18px;
+  font-weight: bolder;
+  line-height: 18px;
+  width: 390px;
+  color: black;
+  margin-left: 10px; }
+main .container #list .list_b li i {
+  display: block;
+  width: 390px;
+  font-size: 15px;
+  color: #999999;
+  margin: 5px 10px; }
+main .container #list .list_b li ul {
+  height: 60px;
+  width: 390px;
+  border-bottom: 1px dashed black; }
+  main .container #list .list_b li ul li {
+    float: left; }
+main .container #list .list_b > li {
+  border: solid 1px white;
+  float: left;
+  width: 390px;
+  height: 450px;
+  margin-top: 20px; }
+main .container #list .list_b > li:hover {
+  border: solid 1px red; }
+
+/*# sourceMappingURL=index.css.map */

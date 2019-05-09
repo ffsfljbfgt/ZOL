@@ -1,0 +1,191 @@
+header #h_top {
+  background: #F5F5F5;
+  height: 30px;
+}
+header #h_top #h_top_l {
+  float: left;
+}
+header #h_top #h_top_l li {
+  float: left;
+}
+header #h_top #h_top_l li a, header #h_top #h_top_l li span {
+  float: left;
+  display: block;
+  font-size: 12px;
+  line-height: 30px;
+  color: black;
+}
+header #h_top #h_top_l li:hover a {
+  color: red;
+}
+header #h_top #h_top_l li:nth-last-of-type(2) {
+  margin: 0 12px;
+}
+header #h_top #h_top_l li:nth-last-of-type(2) a {
+  color: blue;
+}
+header #h_top #h_top_r {
+  float: right;
+}
+header #h_top #h_top_r li {
+  float: left;
+  margin: 0 12px;
+}
+header #h_top #h_top_r li a {
+  color: black;
+  line-height: 30px;
+  display: block;
+  font-size: 12px;
+  margin: 0 5px;
+}
+header #h_top #h_top_r li:hover a {
+  color: red;
+}
+header #h_top #h_top_r li:nth-of-type(2) {
+  position: relative;
+}
+header #h_top #h_top_r li:nth-of-type(2) div {
+  background: white;
+  position: absolute;
+  display: none;
+}
+header #h_top #h_top_r1:hover {
+  background: white;
+}
+header #h_top #h_top_r1:hover #h_top_r1_1 {
+  display: block;
+}
+header #h_top #h_top_r1:hover #h_top_r1_1 a {
+  color: black;
+}
+header #h_top #h_top_r li:nth-of-type(5) {
+  position: relative;
+}
+header #h_top #h_top_r li:nth-of-type(5) div {
+  position: absolute;
+  display: none;
+}
+header #h_top #h_top_r2:hover {
+  background: white;
+}
+header #h_top #h_top_r2:hover #h_top_r2_2 {
+  display: block;
+}
+header #h_mid .container {
+  height: 150px;
+  padding-top: 30px;
+}
+header #h_mid .container .h_min_l {
+  float: left;
+}
+header #h_mid .container .h_min_l a {
+  display: block;
+  height: 50px;
+  width: 300px;
+  background: url(../img/zoltuan.png);
+}
+header #h_mid .container .h_min_m {
+  float: left;
+  margin-top: 5px;
+}
+header #h_mid .container .h_min_m #seach_vl {
+  width: 465px;
+  height: 35px;
+  border: 2px solid red;
+  line-height: 35px;
+  font-size: 18px;
+  padding-left: 5px;
+}
+header #h_mid .container .h_min_m #seach {
+  height: 38px;
+  width: 78px;
+  line-height: 35px;
+  background: red;
+  color: white;
+  margin-left: -6px;
+}
+header #h_mid .container .h_min_m ul li {
+  float: left;
+  margin: 5px 5px 0 5px;
+}
+header #h_mid .container .h_min_m ul li a {
+  color: #999999;
+  font-size: 14px;
+}
+header #h_mid .container .h_min_m ul li:hover a {
+  color: red;
+}
+header #h_mid .container .h_min_m div {
+  margin-top: 10px;
+  font-size: 14px;
+}
+header #h_mid .container .h_min_m div span {
+  display: inline-block;
+  background: red;
+  color: white;
+  height: 20px;
+  width: 40px;
+  line-height: 20px;
+  margin-right: 5px;
+  text-align: center;
+}
+header #h_mid .container .h_min_r {
+  float: left;
+  margin: 13px 0 0 30px;
+}
+header #h_mid .container .h_min_r li {
+  float: left;
+  margin: 0 10px;
+}
+header #h_mid .container .h_min_r li a {
+  display: block;
+  color: black;
+  font-size: 14px;
+  line-height: 25px;
+}
+header #h_mid .container .h_min_r li:hover a {
+  color: red;
+}
+header #h_b .container {
+  border-bottom: 3px solid #EC3639;
+}
+header #h_b .container div {
+  display: inline-block;
+  height: 38px;
+  width: 160px;
+  text-align: center;
+  background: #EC3639;
+  line-height: 38px;
+  color: white;
+  position: relative;
+}
+header #h_b .container div ul {
+  position: absolute;
+  display: none;
+}
+header #h_b .container div ul li a {
+  display: block;
+  width: 160px;
+  height: 45px;
+  text-align: center;
+  line-height: 45px;
+  background: #3b3838;
+  color: white;
+}
+header #h_b .container div ul li:hover a {
+  background: white;
+  color: #3b3838;
+}
+header #h_b .container div:hover ul {
+  display: block;
+}
+header #h_b .container a {
+  display: inline-block;
+  font-size: 20px;
+  line-height: 38px;
+  text-align: center;
+  width: 130px;
+  color: red;
+}
+
+/*# sourceMappingURL=head.css.map */
