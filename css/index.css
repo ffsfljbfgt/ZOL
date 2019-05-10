@@ -30,35 +30,83 @@ main .container #list .list_t {
   main .container #list .list_t li:hover a {
     color: red;
     background: white; }
-main .container #list .list_b li img {
-  height: 283px;
-  width: 283px;
-  margin-bottom: 16px; }
-main .container #list .list_b li p {
-  font-size: 18px;
-  font-weight: bolder;
-  line-height: 18px;
-  width: 390px;
-  color: black;
-  margin-left: 10px; }
-main .container #list .list_b li i {
-  display: block;
-  width: 390px;
-  font-size: 15px;
-  color: #999999;
-  margin: 5px 10px; }
-main .container #list .list_b li ul {
-  height: 60px;
-  width: 390px;
-  border-bottom: 1px dashed black; }
-  main .container #list .list_b li ul li {
-    float: left; }
+main .container #list .list_b {
+  margin: 0 auto; }
+  main .container #list .list_b li img {
+    margin: 0 auto;
+    height: 283px;
+    width: 283px;
+    margin-bottom: 16px; }
+  main .container #list .list_b li p {
+    font-size: 18px;
+    font-weight: bolder;
+    line-height: 18px;
+    width: 340px;
+    color: black;
+    height: 18px;
+    margin-left: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  main .container #list .list_b li i {
+    display: block;
+    width: 340px;
+    font-size: 15px;
+    color: #999999;
+    margin: 5px 10px;
+    line-height: 15px;
+    height: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  main .container #list .list_b li ul {
+    position: relative;
+    padding-top: 15px;
+    height: 40px;
+    width: 350px;
+    border-bottom: 1px dashed black; }
+    main .container #list .list_b li ul li {
+      float: left; }
+      main .container #list .list_b li ul li h3 {
+        width: 80px;
+        color: #C31F1E;
+        font-size: 28px; }
+      main .container #list .list_b li ul li h4 {
+        font-size: 18px;
+        text-decoration: line-through;
+        margin: 3px 5px 0px 15px;
+        padding-top: 5px; }
+      main .container #list .list_b li ul li span {
+        display: inline-block;
+        height: 20px;
+        line-height: 20px;
+        color: #C31F1E;
+        font-size: 20px;
+        padding: 0 4px;
+        border: solid 1px #C31F1E;
+        margin-top: 5px;
+        margin-left: 5px; }
+      main .container #list .list_b li ul li a {
+        color: white;
+        display: inline-block;
+        height: 40px;
+        width: 80px;
+        background: #C31F1E;
+        line-height: 40px;
+        font-size: 20px;
+        position: absolute;
+        bottom: 10px;
+        right: 10px; }
+  main .container #list .list_b li div {
+    color: #b42727;
+    line-height: 45px;
+    font-size: 15px;
+    font-weight: bolder; }
 main .container #list .list_b > li {
-  border: solid 1px white;
+  border: solid 1px #ccc;
   float: left;
-  width: 390px;
+  width: 350px;
   height: 450px;
-  margin-top: 20px; }
+  margin-top: 20px;
+  margin: 10px 24px; }
 main .container #list .list_b > li:hover {
   border: solid 1px red; }
 
