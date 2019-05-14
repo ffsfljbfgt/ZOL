@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded",function(){
     var list_b =document.getElementsByClassName("list_b")[0]
     var list_t =document.getElementsByClassName("list_t")[0]
-    // 最新团购排序
-    // console.log(list_t.children[1])
+    var headr =document.getElementById("h_top_l")
+    var bth = headr.children[2].children[0]
     list_t.children[1].onclick =function(){
       AJAX1("get","api/news.php","search=new",function(str){
         init(str)
@@ -30,7 +30,12 @@ document.addEventListener("DOMContentLoaded",function(){
     AJAX1("get","api/index.php","a",function(str){
         init(str)
     })
-
+    //  退出
+    bth.onclick=function(){
+      clearCookie("name")
+      location=location
+    }
+    // 列表渲染
     function init(str){
         var str =JSON.parse(str)
        var res= str.map(function(item){
@@ -73,5 +78,19 @@ document.addEventListener("DOMContentLoaded",function(){
           }
         countDown(restime)    
        }}
+
+      //  COOKIE
+  var arrs = document.cookie.split("; ")
+  arrs.forEach(function(item){
+    var res = item.split("=");
+    console.log(res)
+    if(res[0] == "name"){
+      headr.children[1].children[0].innerHTML=""
+      headr.children[1].children[1].innerHTML="欢迎回来"+res[1]
+    }else{
+      headr.children[1].children[0].innerHTML="欢迎来到Z商城请"
+      headr.children[1].children[1].innerHTML=登陆
+    }
+  })
 
 })

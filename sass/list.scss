@@ -7,7 +7,7 @@ main{
                     float: left;
                     a{
                         display: block;
-                        font-size: 18px;
+                        font-size: 14px;
                         height: 40px;
                         line-height: 40px;
                         padding: 0 15px;
@@ -135,4 +135,24 @@ main{
                 background: #858282
             }
         }   
+}
+#pagebtn{
+    width: 1200px;
+    // overflow: hidden;
+    text-align: center;
+  a{
+      height: 40px;
+      width: 40px;
+     display:inline-block;
+     text-align: center;
+     background: #cccccc;
+     line-height: 40px;
+     color: white;
+     font-size: 18px;
+     margin:10px;
+    
+  }
+}
+.active{
+    background: orange !important
 }

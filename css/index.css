@@ -22,7 +22,7 @@ main .container #list .list_t {
     float: left; }
     main .container #list .list_t li a {
       display: block;
-      font-size: 18px;
+      font-size: 14px;
       height: 40px;
       line-height: 40px;
       padding: 0 15px;
