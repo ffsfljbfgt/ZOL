@@ -1,0 +1,158 @@
+.containner{
+    width: 990px;
+    height: 920px;
+    margin: 0 auto;
+    header{
+        height: 120px;
+        width: 990px;
+        padding-top: 60px;
+        .head_l{
+            float: left;
+            li{
+                float: left;
+                a{
+                    display: block;
+                    background: url(../img/loginlogo.png);
+                    color: black;
+                    height: 60px;
+                    width: 130px;
+                }
+                p{
+                    line-height: 60px;
+                    margin-left: 10px;
+                    padding-left: 5px;
+                    font-size: 15px;
+                    color: #5c5a5a;
+                    border-left:solid 1px #cccccc;
+                }
+            }
+            
+        }
+       .head_r{
+           padding-top: 26px;
+           float:right;
+           li{
+               float: left;
+               p{
+                font-size: 15px;
+                color:black;
+                font-weight:bolder;
+                line-height: 15px;
+               }
+               a{
+                   color: red;
+                   font-size: 15px;
+                   line-height: 15px;
+               }
+           }
+       } 
+    }
+    main{
+        height: 770px;
+        border:solid 1px #cccccc;
+        margin-bottom: 40px;
+        .main_t{
+            width: 990px;
+            line-height: 60px;
+            background: #999999;
+            color: #cccccc;
+            text-align: center;
+            font-size: 25px;
+        }
+        .main_l{
+            float: left;
+            height: 685px;
+            width:615px;
+            padding-top: 15px;
+            padding-left: 85px;
+            li{
+                margin-top: 15px;
+                width: 500px;
+                padding-left: 18px;
+                div{
+                    font-size: 18px;
+                    line-height: 40px;
+                  input{
+                      border: 1px solid #999999;
+                      height: 38px;
+                      width: 285px;
+                      padding-left: 5px;
+                      line-height: 38px;;
+                      font-size: 14px;
+                      color: #999999
+                  }
+                    
+                }
+                span{
+                    padding-left: 89px;
+                    line-height: 30px;
+                    color: red;
+                }
+            }
+            #reg{
+                margin-left: 103px;;
+                margin-top: 10px;
+                display: block;
+                height: 42px;
+                width: 290px;
+                background: #DC2E2E;
+                text-align: center;
+                line-height: 42px;
+                color: white;
+
+
+            }
+            img{
+                float:right;
+            }
+        }
+        .main_l li:nth-of-type(1){
+            height: 46px;
+            width: 502px;
+            border-bottom: 1px solid #999999;
+            p{
+                font-weight: bolder;
+                width: 255px;
+                font-size: 19px;
+                height: 43px;
+                line-height: 42px;
+                text-align: center;
+                color: orangered;
+                border-top: 3px solid orangered;
+                border-left: 1px solid #999999;
+                border-right: 1px solid #999999;
+                border-bottom:  1px solid white
+            }
+    
+        }
+    
+    }
+    footer{
+        border-top: solid 1px #cccccc;
+        padding-top: 20px;
+        height: 50px;
+        ul{
+            float: left;
+            li{
+                float: left;
+                a{
+                    display:block;
+                    border-right:1px solid #5c5a5a;
+                    color: #5c5a5a;
+                    padding-right: 10px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+        }
+
+        }
+        p{
+            float: right;
+            color: #5c5a5a;
+            padding-right: 10px;
+            font-size: 14px;
+
+        }
+        
+    }
+}

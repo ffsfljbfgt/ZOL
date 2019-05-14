@@ -1,0 +1,137 @@
+html,body{
+    width: 100%
+}
+.containner{
+    width: 990px;
+    height: 920px;
+    margin: 0 auto;
+    header{
+        height: 120px;
+        width: 990px;
+        padding-top: 60px;
+        .head_l{
+            float: left;
+            li{
+                float: left;
+                a{
+                    display: block;
+                    background: url(../img/loginlogo.png);
+                    color: black;
+                    height: 60px;
+                    width: 130px;
+                }
+                p{
+                    line-height: 60px;
+                    margin-left: 10px;
+                    padding-left: 5px;
+                    font-size: 15px;
+                    color: #5c5a5a;
+                    border-left:solid 1px #cccccc;
+                }
+            }
+            
+        }
+       .head_r{
+           padding-top: 26px;
+           float:right;
+           li{
+               float: left;
+               p{
+                font-size: 15px;
+                color:black;
+                font-weight:bolder;
+                line-height: 15px;
+               }
+               a{
+                   color: red;
+                   font-size: 15px;
+                   line-height: 15px;
+               }
+           }
+       } 
+    }
+    main{
+        height: 700px;
+        .main_l{
+          
+            float: left;
+            height: 350px;
+            width: 520px;
+            background:url(../img/login1.jpg);
+        }
+        .main_r{
+            float: left;  
+            width: 360px;
+            padding-left: 90px;
+            padding-top:25px;
+            border: solid 1px #cccccc;
+            h3{
+                color: black;
+                font-weight: bolder;
+                line-height: 30px;
+                font-size: 20px;
+                width: 150px;
+                text-align: center;
+                border-bottom: solid 3px white
+            }
+            input{
+                display: block;
+                line-height: 40px;
+                border: solid 1px #5c5a5a;
+                width: 285px;
+                padding-left: 5px;
+                font-size: 15px;
+                margin: 11px 0;
+            }
+            a{
+                display: block;
+                height: 42px;
+                width: 290px;
+                text-align: center;
+                background: orangered;
+                line-height: 42px;
+                color:white;
+                margin-top: 50px;
+                font-size: 20px;
+                
+            }
+            div{
+                height: 92px;
+                width: 292px;
+                background: url(../img/login_2.png);
+            }
+
+        }
+        .main_r h3:hover{
+            border-bottom: solid 3px orangered;
+        }
+    }
+    footer{
+        border-top: solid 1px #5c5a5a;
+        padding-top: 20px;
+        height: 50px;
+        ul{
+            float: left;
+            li{
+                float: left;
+                a{
+                    display:block;
+                    border-right:1px solid #5c5a5a;
+                    color: #5c5a5a;
+                    padding-right: 10px;
+                    font-size: 14px;
+                    padding-left: 10px;
+                }
+        }
+
+        }
+        p{
+            float: right;
+            color: #5c5a5a;
+            padding-right: 10px;
+            font-size: 14px;
+
+        }
+        
+    }
+}

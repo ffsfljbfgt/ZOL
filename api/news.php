@@ -1,6 +1,6 @@
 <?php
 include "common.php";
-$search = isset($_GET['search']) ? $_GET['search'] : 'page';
+$search = isset($_GET['search']) ? $_GET['search'] : '';
 $sql= "SELECT * FROM shoping ORDER BY $search LIMIT 0,9";
  $res = $conn->query($sql);
  $content= $res->fetch_all(MYSQLI_ASSOC);

@@ -1,0 +1,109 @@
+html, body {
+  width: 100%; }
+
+.containner {
+  width: 990px;
+  height: 920px;
+  margin: 0 auto; }
+  .containner header {
+    height: 120px;
+    width: 990px;
+    padding-top: 60px; }
+    .containner header .head_l {
+      float: left; }
+      .containner header .head_l li {
+        float: left; }
+        .containner header .head_l li a {
+          display: block;
+          background: url(../img/loginlogo.png);
+          color: black;
+          height: 60px;
+          width: 130px; }
+        .containner header .head_l li p {
+          line-height: 60px;
+          margin-left: 10px;
+          padding-left: 5px;
+          font-size: 15px;
+          color: #5c5a5a;
+          border-left: solid 1px #cccccc; }
+    .containner header .head_r {
+      padding-top: 26px;
+      float: right; }
+      .containner header .head_r li {
+        float: left; }
+        .containner header .head_r li p {
+          font-size: 15px;
+          color: black;
+          font-weight: bolder;
+          line-height: 15px; }
+        .containner header .head_r li a {
+          color: red;
+          font-size: 15px;
+          line-height: 15px; }
+  .containner main {
+    height: 700px; }
+    .containner main .main_l {
+      float: left;
+      height: 350px;
+      width: 520px;
+      background: url(../img/login1.jpg); }
+    .containner main .main_r {
+      float: left;
+      width: 360px;
+      padding-left: 90px;
+      padding-top: 25px;
+      border: solid 1px #cccccc; }
+      .containner main .main_r h3 {
+        color: black;
+        font-weight: bolder;
+        line-height: 30px;
+        font-size: 20px;
+        width: 150px;
+        text-align: center;
+        border-bottom: solid 3px white; }
+      .containner main .main_r input {
+        display: block;
+        line-height: 40px;
+        border: solid 1px #5c5a5a;
+        width: 285px;
+        padding-left: 5px;
+        font-size: 15px;
+        margin: 11px 0; }
+      .containner main .main_r a {
+        display: block;
+        height: 42px;
+        width: 290px;
+        text-align: center;
+        background: orangered;
+        line-height: 42px;
+        color: white;
+        margin-top: 50px;
+        font-size: 20px; }
+      .containner main .main_r div {
+        height: 92px;
+        width: 292px;
+        background: url(../img/login_2.png); }
+    .containner main .main_r h3:hover {
+      border-bottom: solid 3px orangered; }
+  .containner footer {
+    border-top: solid 1px #5c5a5a;
+    padding-top: 20px;
+    height: 50px; }
+    .containner footer ul {
+      float: left; }
+      .containner footer ul li {
+        float: left; }
+        .containner footer ul li a {
+          display: block;
+          border-right: 1px solid #5c5a5a;
+          color: #5c5a5a;
+          padding-right: 10px;
+          font-size: 14px;
+          padding-left: 10px; }
+    .containner footer p {
+      float: right;
+      color: #5c5a5a;
+      padding-right: 10px;
+      font-size: 14px; }
+
+/*# sourceMappingURL=login.css.map */

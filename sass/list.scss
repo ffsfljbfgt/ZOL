@@ -1,0 +1,138 @@
+main{
+    .container{
+            .list_t{
+                width: 1200px;
+                background: #E3E1E2;
+                li{
+                    float: left;
+                    a{
+                        display: block;
+                        font-size: 18px;
+                        height: 40px;
+                        line-height: 40px;
+                        padding: 0 15px;
+                        color:black;
+                    }
+                }
+                li:hover a{
+                    color: red;
+                    background: white;
+                }
+            }
+             
+             .list_b{
+                margin: 0 auto;
+                li{
+                  img{
+                    margin: 0 auto;
+                    height: 283px;
+                    width: 283px;
+                    margin-bottom: 16px;
+                    }
+                   p{
+                       font-size: 18px;
+                       font-weight: bolder;
+                       line-height: 18px;
+                       width: 340px;
+                       color: black;
+                       height: 18px;
+                       margin-left: 10px;
+                       overflow: hidden;
+                       text-overflow: ellipsis;
+
+                   }
+                   i{
+                       display:block;
+                        width: 340px;
+                        font-size: 15px;
+                        color: #999999;
+                        margin:5px 10px;
+                        line-height: 15px;
+                        height: 15px;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+
+                   }
+                   ul{
+                       position: relative;
+                       padding-top: 15px;
+                       height: 40px;
+                       width: 350px;
+                       border-bottom: 1px dashed black;
+                       li{
+                           float: left;
+                           h3{
+                               width:80px ;
+                               color:#C31F1E;
+                               font-size: 28px;
+                           }
+                           h4{
+                            font-size:18px;
+                            text-decoration:line-through;
+                            margin: 3px 5px 0px 15px;
+                            padding-top:5px;
+                           }
+                           span{
+                               display: inline-block;
+                               height: 20px;
+                               line-height: 20px;
+                               color: #C31F1E;
+                               font-size: 20px;
+                               padding: 0 4px;
+                               border: solid 1px #C31F1E;
+                               margin-top:5px;
+                               margin-left: 5px;
+                           }
+                           a{
+                              color: white;
+                               display: inline-block;
+                               height: 40px;
+                               width: 80px;
+                               background: #C31F1E;
+                               line-height: 40px;;
+                               font-size: 20px;
+                               position: absolute;
+                               bottom: 10px;
+                               right: 10px;
+
+                           }
+                       }
+                   }
+                   div{
+                       color: rgb(180, 39, 39);
+                       line-height: 45px;
+                    //    padding-left: 30px;
+                       font-size: 15px;
+                       font-weight: bolder
+                   }
+                } 
+                          
+            }
+            .list_b>li{
+                border: solid 1px #ccc;
+                float: left;
+                width: 350px;
+                height: 450px;
+                margin-top:20px;
+                margin: 10px 24px;
+            }
+            .list_b>li:hover{
+               border: solid 1px red
+            }
+        
+          
+    }
+    .container>#main_b{
+        margin-bottom: 10px;
+            a{
+                display: block;
+                height: 50px;
+                width: 1200px;
+                text-align: center;
+                line-height: 50px;
+                color: black;
+                font-size: 18px;
+                background: #858282
+            }
+        }   
+}
