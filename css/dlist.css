@@ -1,0 +1,177 @@
+main .container {
+  position: relative;
+  height: 840px; }
+  main .container #main_t li {
+    float: left;
+    display: block;
+    line-height: 30px;
+    font-size: 12px;
+    padding-right: 5px; }
+  main .container #main_b {
+    height: 810px;
+    width: 1200px; }
+    main .container #main_b #main_b_l {
+      float: left;
+      height: 810px;
+      width: 452px; }
+      main .container #main_b #main_b_l div #small {
+        z-index: -10px;
+        position: relative; }
+        main .container #main_b #main_b_l div #small img {
+          width: 450px;
+          height: 420px; }
+        main .container #main_b #main_b_l div #small #small_box {
+          width: 225px;
+          height: 215px;
+          opacity: 0.7;
+          background: #7c7979;
+          position: absolute;
+          left: 0;
+          top: 0;
+          display: none; }
+      main .container #main_b #main_b_l div #big {
+        right: 298px;
+        top: 12px;
+        position: absolute;
+        width: 450px;
+        height: 420px;
+        overflow: hidden;
+        display: none; }
+        main .container #main_b #main_b_l div #big img {
+          height: 900px;
+          width: 840px; }
+    main .container #main_b #main_b_c {
+      float: left;
+      height: 810px;
+      width: 550px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(1) {
+        padding-top: 5px;
+        font-size: 18px;
+        font-weight: bolder;
+        line-height: 18px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(2) {
+        font-size: 13px;
+        color: #8b8a8a;
+        line-height: 30px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(3) {
+        height: 50px;
+        width: 530px;
+        background: #CC0000; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(3) img {
+          float: left; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(3) P {
+          float: right;
+          color: white;
+          line-height: 50px;
+          font-size: 20px;
+          padding-right: 5px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(4) {
+        height: 40px;
+        width: 530px;
+        background: #F7F7F7;
+        line-height: 40px;
+        font-size: 15px;
+        font-weight: bolder; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(4) p:nth-of-type(1) {
+          display: inline-block;
+          line-height: 40px;
+          color: #CC0000;
+          font-size: 25px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(4) p:nth-of-type(2) {
+          display: inline-block;
+          text-decoration: line-through;
+          color: #777676;
+          line-height: 40px;
+          margin-left: 20px;
+          font-size: 20px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(4) span:nth-of-type(1) {
+          font-size: 16px;
+          line-height: 16px;
+          padding: 5px;
+          background: #CC0000;
+          color: white;
+          margin-left: 20px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(5) {
+        margin-top: 15px;
+        font-size: 15px;
+        font-weight: bolder; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(5) select {
+          height: 25px;
+          width: 50px;
+          display: inline-block; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(5) p {
+          display: inline-block; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(6) {
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 50px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(6) span {
+          font-weight: 300; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(7) {
+        font-size: 15px;
+        font-weight: bolder; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(7) p {
+          font-weight: 300;
+          display: inline-block;
+          font-size: 15px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(8) {
+        margin-top: 15px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(9) {
+        width: 530px;
+        background: #acaaaa;
+        color: red;
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 50px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(9) div {
+          padding: 5px;
+          display: inline-block;
+          height: 25px;
+          margin-top: 5px;
+          background: white;
+          border: 1px solid #CC0000;
+          line-height: 25px; }
+          main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(9) div p {
+            display: inline-block;
+            margin: 0 10px; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(10), main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(11), main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(12), main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(13) {
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 50px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(10) p, main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(11) p, main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(12) p, main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(13) p {
+          margin-left: 10px;
+          line-height: 20px;
+          padding: 5px;
+          display: inline-block;
+          border: 1px solid #CC0000; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(14) {
+        font-size: 15px;
+        font-weight: bolder;
+        line-height: 50px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(14) div {
+          display: inline-block; }
+          main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(14) div input {
+            width: 43px;
+            height: 27px;
+            line-height: 27px;
+            text-align: center; }
+          main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(14) div a {
+            display: inline-block;
+            height: 32px;
+            width: 27px;
+            background: #F7F7F7;
+            line-height: 32px;
+            text-align: center; }
+      main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(15) {
+        margin-left: 63px;
+        margin-top: 20px; }
+        main .container #main_b #main_b_c #main_b_c_t li:nth-of-type(15) a {
+          display: inline-block;
+          width: 140px;
+          background: #CC0000;
+          line-height: 50px;
+          text-align: center;
+          color: #F7F7F7;
+          margin-right: 10px; }
+
+/*# sourceMappingURL=dlist.css.map */

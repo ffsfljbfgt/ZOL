@@ -160,6 +160,7 @@ header #h_b .container div {
   position: relative;
 }
 header #h_b .container div ul {
+  z-index: 1;
   position: absolute;
   display: none;
 }

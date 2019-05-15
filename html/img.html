@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        #all{
+            overflow: hidden;
+        }
+        #small{
+            float: left;
+        }
+        #big{
+            float: left;
+        }
+        #small img{
+            height: 300px;
+            width: 300px;
+            position: relative
+        }
+        #small_box{
+            height: 100px;
+            width: 100px;
+            position: absolute;
+            background: #cccccc;
+            left: 0;
+            top: 0;
+            display: none;
+            opacity:0.7;
+        }
+        #big{
+            display: none;
+            height: 300px;
+            width: 300px;
+            overflow: hidden;
+        }
+        #big img{
+            height: 900px;
+            width:900px;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <div id="all">
+        <div id="small">
+            <img src="../img/list1.jpg" alt="">
+            <div id="small_box"></div>
+        </div>
+        <div id="big">
+            <img src="../img/list1.jpg" alt="">
+        </div>
+
+
+
+    </div>
+</body>
+<script>
+    window.onload=function(){
+        var small = document.getElementById("small")
+        var big = document.getElementById("big")
+        var small_box = document.getElementById("small_box")
+        small.onmousemove=function(e){
+            // console.log(small_box)
+            small.children[1].style.display="block"
+             big.style.display="block"
+            let X =e.clientX-small.offsetLeft-small_box.offsetWidth/2
+            let Y =e.clientY-small.offsetTop-small_box.offsetHeight/2
+            X<=0?X=0:X
+            Y<=0?Y=0:Y
+            X>=small.offsetWidth-small_box.offsetWidth?X=small.offsetWidth-small_box.offsetWidth:X
+            Y>=small.offsetHeight-small_box.offsetHeight?Y=small.offsetHeight-small_box.offsetHeight:Y
+            small_box.style.left= X+"px"
+            small_box.style.top= Y+"px"
+            let bigx= X* (big.children[0].offsetWidth-big.offsetWidth)/(small.children[0].offsetWidth-small.children[1].offsetWidth)
+            let bigy= Y*(big.children[0].offsetHeight-big.offsetHeight)/(small.children[0].offsetHeight-small.children[1].offsetHeight)
+            big.children[0].style.marginLeft=-bigx+"px"
+            big.children[0].style.marginTop=-bigy+"px"
+        }
+        small.onmouseout=function(){
+            small.children[1].style.display="none"
+             big.style.display="none"
+        }
+    }
+    
+    
+    </script>
+    </html>

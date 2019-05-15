@@ -2,6 +2,7 @@ document.addEventListener("DOMContentLoaded",function(){
     var list_b =document.getElementsByClassName("list_b")[0]
     var list_t =document.getElementsByClassName("list_t")[0]
     var headr =document.getElementById("h_top_l")
+    
     var bth = headr.children[2].children[0]
     list_t.children[1].onclick =function(){
       AJAX1("get","api/news.php","search=new",function(str){
@@ -41,7 +42,7 @@ document.addEventListener("DOMContentLoaded",function(){
        var res= str.map(function(item){
         
         var price =item.price-item.nprice;
-           return `<li class="lists_b" data="${item.id}"><img src="img/${item.pic}" alt=""><p><nobr>${item.name}</nobr></p><i><nobr>${item.jianjie}</nobr></i><ul class="clearfix"><li><h3>￥${item.nprice}</h3></li><li><h4>${item.price}</h4></li><li><span>立省${price}</span></li><li><a href="">马上抢购</a></li></ul><div title="${item.stime}"></div></li>`
+           return `<li class="lists_b" data="${item.id}" id="abc"><img src="img/${item.pic}" alt=""><p><nobr>${item.name}</nobr></p><i><nobr>${item.jianjie}</nobr></i><ul class="clearfix"><li><h3>￥${item.nprice}</h3></li><li><h4>${item.price}</h4></li><li><span>立省${price}</span></li><li><a href="#" id="btn_d" date="${item.id}">马上抢购</a></li></ul><div title="${item.stime}"></div></li>`
        }).join('');
        list_b.innerHTML= res;
        var nowT = new Date();
@@ -89,8 +90,13 @@ document.addEventListener("DOMContentLoaded",function(){
       headr.children[1].children[1].innerHTML="欢迎回来"+res[1]
     }else{
       headr.children[1].children[0].innerHTML="欢迎来到Z商城请"
-      headr.children[1].children[1].innerHTML=登陆
+      headr.children[1].children[1].innerHTML="登陆"
     }
   })
+  // var lists_b= document.getElementById("abc")
+  //   // 传送数据至详情页
+  list_b.onclick=function(e){
+    e.target.nodeName.toLocaleLowerCase() == 'a'?window.location.href="html/dlist.html"+"?"+e.target.getAttribute("date"):0
+  }
 
 })
