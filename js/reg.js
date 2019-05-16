@@ -7,14 +7,19 @@ document.addEventListener("DOMContentLoaded",function(){
    var isok2 =false
    var isok3 =false
    init()
-   bth.setAttribute("disabled", true)
-   bth.style.backgroundColor  = '#555555'
+   disaBled()
+   function disaBled(){
+     bth.setAttribute("disabled", true)
+    bth.style.backgroundColor  = '#555555'
+   }
+   
    usname.onblur=function(){
     usname.parentNode.parentNode.children[1].innerHTML= ""
        if(!/^1[0-9]\d{9}$/.test(usname.value)){
           usname.parentNode.parentNode.children[1].innerHTML="请输入正确的手机号"
           usname.parentNode.parentNode.children[1].style.color ="red"
           isok1 =false
+          disaBled()
           return
        }
        AJAX1("get","../api/reg.php","usname="+usname.value,function(str){
@@ -25,6 +30,7 @@ document.addEventListener("DOMContentLoaded",function(){
            }else{
             usname.parentNode.parentNode.children[1].innerHTML="该手机已经注册"
             isok1 =false
+            disaBled()
            }
        })
    }
@@ -33,6 +39,7 @@ document.addEventListener("DOMContentLoaded",function(){
        if(!/^[0-9A-Za-z]{6,16}$/.test(psw.value)){
         psw.parentNode.parentNode.children[1].innerHTML="请输入正确的密码，6-16位数字字母组合，不可用特殊字符"
          isok2 =false
+         disaBled()
        }else{
          isok2 =true
         psw.parentNode.parentNode.children[1].innerHTML="密码可以使用"
@@ -44,6 +51,7 @@ document.addEventListener("DOMContentLoaded",function(){
        if(!(psw.value==rpsw.value)){
         rpsw.parentNode.parentNode.children[1].innerHTML="两次密码不一致"
          isok3 =false
+         disaBled()
        }else{
          isok3 =true
          rpsw.parentNode.parentNode.children[1].innerHTML="两次密码一致"
