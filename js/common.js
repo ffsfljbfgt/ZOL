@@ -38,7 +38,7 @@
                 if(xhr.status==200){
                     fn(xhr.responseText)
                 }else{
-                    alert(xhr.status)
+                    // alert(xhr.status)
                 }
 
             }
@@ -52,7 +52,7 @@
                  if(xhr.status==200){
                     fn(xhr.responseText)
                  }else{
-                    alert(xhr.status)
+                    // alert(xhr.status)
                  }
              }
          }
@@ -71,7 +71,7 @@
                if(xhr.status==200){
                 opt.suecces(xhr.responseText)
                }else{
-                   alert(xhr.status)
+                //    alert(xhr.status)
                }
 
            }
@@ -85,7 +85,7 @@
                 if(xhr.status==200){
                     opt.suecces(xhr.responseText)
                 }else{
-                   alert(xhr.status)
+                //    alert(xhr.status)
                 }
             }
         }

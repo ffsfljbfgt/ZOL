@@ -10,7 +10,7 @@ window.onload=function(){
             AJAX1("post","../api/login.php","usname="+usname.value+"&psw="+psw.value,function(str){
                 if(str == 'yes') {
                     var exp = new Date()
-                    exp.setTime(exp.getTime()+7*60*2000)
+                    exp.setTime(exp.getTime()+100*60*2000)
                     location.href = '../index.html';
                     document.cookie="name="+usname.value+"; path=/"+"; expires="+exp.toGMTString()
                 } else {

@@ -65,7 +65,6 @@ document.addEventListener("DOMContentLoaded",function(){
     var arrs = document.cookie.split("; ")
     var arrs1 =arrs.join("")
     var res1 = arrs1.split("=");
-    res1[1]
     arrs.forEach(function(item){
     var res = item.split("=");
     if(res[0] == "name"){
@@ -98,19 +97,33 @@ document.addEventListener("DOMContentLoaded",function(){
     }
     }
    carin.children[0].onclick=function(){
-      console.log(666)
+      innit2(choose.children[1].value)
+    //   location.href="car.html"
    }
-   function innit2(){
+
+   carin.children[1].onclick=function(){
+      innit2(choose.children[1].value)
+      
+   }
+
+
+
+   function innit2(vnumber){
        AJAX1("get","../api/car.php","id="+location.search.slice(1)+"&usname="+res1[1],function(str){
             if(str=="true"){
-                console.log(666)
+             AJAX1("get","../api/car1.php","id="+location.search.slice(1)+"&usname="+res1[1]+"&vl="+vnumber,function(str){
+               console.log(6666)
+             })
             }else{
                 str =JSON.parse(str)
-                console.log(str)
+                str[0].number= Number(vnumber)+Number(str[0].number)
+               AJAX1("get","../api/car2.php","id="+location.search.slice(1)+"&vl="+str[0].number,function(str){
+
+               })
             }
        })
    }
-   innit2()
+   
   
 })
  

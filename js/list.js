@@ -82,7 +82,7 @@ window.onload= function(){
         countDown(restime)    
        }
        var pages = Math.ceil(str.total / str.num);
-		    var html = '';
+		   var html = '';
 	    	for(var i = 0; i < pages; i++) {
 			 html += '<a href="javascript:;">'+(i+1)+'</a>';
 				}
